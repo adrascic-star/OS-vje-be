@@ -8,3 +8,26 @@ touch vjezba_2.txt
 
 Rezultat:
 Kreiran je direktorij vjezba_2 i datoteka vjezba_2.txt.
+
+Zadatak 2
+
+Korištene naredbe:
+cd OS1-zadace/vjezba_2
+mkdir data
+mkdir backup
+touch data/script.js
+touch data/style.css
+touch data/.env
+echo 'console.log("Hello, World!")' > data/script.js
+echo 'body { background-color: #f0f0f0; }' > data/style.css
+echo 'VJEZBE=OS' > data/.env
+cat data/script.js
+cat data/style.css
+cat data/.env
+
+Rezultat:
+script.js: console.log("Hello, World!")
+style.css: body { background-color: #f0f0f0; }
+.env: VJEZBE=OS
+
+Sadržaj datoteka provjerava se naredbom cat.
