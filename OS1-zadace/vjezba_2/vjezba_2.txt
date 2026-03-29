@@ -89,3 +89,203 @@ drwxr-xr-x 1 Korisnik 197121  0 Mar 29 17:46 ../
 -rw-r--r-- 1 Korisnik 197121 10 Mar 29 17:52 .env
 -rw-r--r-- 1 Korisnik 197121 29 Mar 29 18:38 script.js
 -rw-r--r-- 1 Korisnik 197121 36 Mar 29 18:38 style.css
+
+Zadatak 5
+
+Korišten je direktorij test_dir koji sadrži poddirektorije i datoteke. (kreiran unutar direktorija vjezba_2)
+
+Korištene naredbe:
+ls -laS
+ls -lhS
+tree.com //F //A (nije radila naredba tree -a u git bash, pa sam koristio ovu naredbu za prikaz stabla i datoteka unutar stabla)
+
+Rezultat:
+
+Naredba ls -laS prikazuje detaljan popis svih datoteka, uključujući skrivene, sortiran po veličini od najveće prema najmanjoj.
+Ispis:
+total 4
+drwxr-xr-x 1 Korisnik 197121 0 Mar 29 19:14 ./
+drwxr-xr-x 1 Korisnik 197121 0 Mar 29 19:12 ../
+-rw-r--r-- 1 Korisnik 197121 0 Mar 29 19:13 .hidden
+-rw-r--r-- 1 Korisnik 197121 0 Mar 29 19:14 config.json
+-rw-r--r-- 1 Korisnik 197121 0 Mar 29 19:13 file1.txt
+-rw-r--r-- 1 Korisnik 197121 0 Mar 29 19:13 file2.txt
+-rw-r--r-- 1 Korisnik 197121 0 Mar 29 19:14 file3.log
+-rw-r--r-- 1 Korisnik 197121 0 Mar 29 19:14 file4.md
+drwxr-xr-x 1 Korisnik 197121 0 Mar 29 19:14 folder1/
+drwxr-xr-x 1 Korisnik 197121 0 Mar 29 19:14 folder2/
+-rw-r--r-- 1 Korisnik 197121 0 Mar 29 19:14 notes.txt
+
+Naredba ls -lhS prikazuje detaljan popis datoteka bez skrivenih, sortiran po veličini, uz prikaz veličina u čitljivim jedinicama (KB, MB).
+Ispis:
+total 0
+-rw-r--r-- 1 Korisnik 197121 0 Mar 29 19:14 config.json
+-rw-r--r-- 1 Korisnik 197121 0 Mar 29 19:13 file1.txt
+-rw-r--r-- 1 Korisnik 197121 0 Mar 29 19:13 file2.txt
+-rw-r--r-- 1 Korisnik 197121 0 Mar 29 19:14 file3.log
+-rw-r--r-- 1 Korisnik 197121 0 Mar 29 19:14 file4.md
+drwxr-xr-x 1 Korisnik 197121 0 Mar 29 19:14 folder1/
+drwxr-xr-x 1 Korisnik 197121 0 Mar 29 19:14 folder2/
+-rw-r--r-- 1 Korisnik 197121 0 Mar 29 19:14 notes.txt
+
+Naredba tree.com //F //A prikazuje strukturu direktorija u obliku stabla, uključujući poddirektorije i datoteke.
+Ispis:
+Folder PATH listing
+Volume serial number is B2B9-2336
+C:.
+|   .hidden
+|   config.json
+|   file1.txt
+|   file2.txt
+|   file3.log
+|   file4.md
+|   notes.txt
+|
++---folder1
+|       a.txt
+|       b.txt
+|       c.log
+|       d.md
+|
+\---folder2
+    |   c.txt
+    |   d.json
+    |   e.txt
+    |
+    \---subfolder
+            test1.txt
+
+Zadatak 5
+
+Korišten je postojeći direktorij koji sadrži poddirektorije i datoteke različitih veličina.
+
+Korištene naredbe:
+cd "~/Desktop/adrijan/faks/osnove podatkovne znanosti"
+ls -laS
+ls -lhS
+tree.com //F //A (naredba tree -a mi nije radila u Git Bash, radi windows okruženja)
+
+Rezultat:
+Naredba ls -laS prikazuje detaljan popis svih datoteka, uključujući skrivene, sortiran po veličini od najveće prema najmanjoj.
+Ispis:
+total 5476
+-rw-r--r-- 1 Korisnik 197121 5552299 Oct 21 21:59 'Introduction to Datascience [R20DS501].pdf'
+-rw-r--r-- 1 Korisnik 197121   11374 Oct 22 20:33  Book.xlsx
+-rw-r--r-- 1 Korisnik 197121    1876 Jan 24 16:25  trzisne_cijene.csv
+-rwxr-xr-x 1 Korisnik 197121    1413 Oct 25 17:52 'Visual Studio Code.lnk'*
+drwxr-xr-x 1 Korisnik 197121       0 Jan 30 19:44  ./
+drwxr-xr-x 1 Korisnik 197121       0 Mar 22 15:44  ../
+drwxr-xr-x 1 Korisnik 197121       0 Dec 18 16:59  kolokvij1/
+drwxr-xr-x 1 Korisnik 197121       0 Jan 15 00:58  projekt1/
+drwxr-xr-x 1 Korisnik 197121       0 Jan 31 01:30  projekt2/
+drwxr-xr-x 1 Korisnik 197121       0 Dec  6 23:00  vježbe1/
+drwxr-xr-x 1 Korisnik 197121       0 Dec 10 19:40  vježbe2/
+drwxr-xr-x 1 Korisnik 197121       0 Dec 16 20:09  vježbe3/
+drwxr-xr-x 1 Korisnik 197121       0 Dec 13 18:57  vježbe4/
+drwxr-xr-x 1 Korisnik 197121       0 Dec 14 13:50  vježbe5/
+drwxr-xr-x 1 Korisnik 197121       0 Dec 14 18:42  vježbe6/
+drwxr-xr-x 1 Korisnik 197121       0 Jan 24 15:46  vježbe7/
+
+Naredba ls -lhS prikazuje detaljan popis datoteka bez skrivenih, sortiran po veličini, uz prikaz veličina u čitljivim jedinicama (KB, MB).
+Ispis:
+total 5.4M
+-rw-r--r-- 1 Korisnik 197121 5.3M Oct 21 21:59 'Introduction to Datascience [R20DS501].pdf'
+-rw-r--r-- 1 Korisnik 197121  12K Oct 22 20:33  Book.xlsx
+-rw-r--r-- 1 Korisnik 197121 1.9K Jan 24 16:25  trzisne_cijene.csv
+-rwxr-xr-x 1 Korisnik 197121 1.4K Oct 25 17:52 'Visual Studio Code.lnk'*
+drwxr-xr-x 1 Korisnik 197121    0 Dec 18 16:59  kolokvij1/
+drwxr-xr-x 1 Korisnik 197121    0 Jan 15 00:58  projekt1/
+drwxr-xr-x 1 Korisnik 197121    0 Jan 31 01:30  projekt2/
+drwxr-xr-x 1 Korisnik 197121    0 Dec  6 23:00  vježbe1/
+drwxr-xr-x 1 Korisnik 197121    0 Dec 10 19:40  vježbe2/
+drwxr-xr-x 1 Korisnik 197121    0 Dec 16 20:09  vježbe3/
+drwxr-xr-x 1 Korisnik 197121    0 Dec 13 18:57  vježbe4/
+drwxr-xr-x 1 Korisnik 197121    0 Dec 14 13:50  vježbe5/
+drwxr-xr-x 1 Korisnik 197121    0 Dec 14 18:42  vježbe6/
+drwxr-xr-x 1 Korisnik 197121    0 Jan 24 15:46  vježbe7/
+
+
+Naredba tree.com //F //A prikazuje strukturu direktorija u obliku stabla, uključujući poddirektorije i datoteke.
+Ispis:
+Folder PATH listing
+Volume serial number is B2B9-2336
+C:.
+|   Book.xlsx
+|   Introduction to Datascience [R20DS501].pdf
+|   trzisne_cijene.csv
+|   Visual Studio Code.lnk
+|
++---kolokvij1
+|       zad1.py
+|
++---projekt1
+|   |   link za projekt.txt
+|   |   Projekt1_Adrijan_Drascic_OPZ.ipynb
+|   |   Projekt1_Adrijan_Drascic_OPZ.zip
+|   |   student+performance.zip
+|   |   test.py
+|   |
+|   +---primjeri
+|   |       ogledni_primjerak_solo.pdf
+|   |       Projekt_Rea_Lakoçeljac_HarryPotter.ipynb
+|   |       projekt_rea_lakoseljac_harrypotter.py
+|   |
+|   \---student+performance
+|       |   .student.zip_old
+|       |   student.zip
+|       |
+|       \---student
+|               student-mat.csv
+|               student-merge.R
+|               student-por.csv
+|               student.txt
+|
++---projekt2
+|   |   2026-01-30 23-57-47.mp4
+|   |   Cjeloviti tekst za video prezentaciju.docx
+|   |   finalni govor za projekt FINALE.docx
+|   |   finalni govor za projekt.docx
+|   |   Skripta za video prezentaciju.docx
+|   |
+|   \---za predaju
+|           2026-01-31 00-53-12.mp4
+|           link na videoprezentaciju.txt
+|           Projekt2_Adrijan_Drascic_OPZ.ipynb
+|           Projekt2_Adrijan_Drascic_OPZ.zip
+|
++---vježbe1
+|       bonus1.md
+|       bonus1.pdf
+|       cover.png
+|       proba.md
+|       redoviti-studij-Prijediplomski, 1. godina[1].pdf
+|       spoji_pdf.py
+|       vjezba.md
+|       vjezba1.md
+|       vjezba1.pdf
+|       vjezbe3.ipynb
+|       vjezbe3.py
+|       zadatak1.pdf
+|
++---vježbe2
+|       agencija_travelio.xlsx
+|
++---vježbe3
+|       AdrijanDrascicZadatakPy1.py
+|       AdrijanDrascicZadatakPy1b.py
+|       test.py
+|       Zadatak1.py
+|
++---vježbe4
+|       AdrijanDrascicZadatakPy2.py
+|
++---vježbe5
+|       AdrijanDrascicZadatakPy3.py
+|       primjerGPT.py
+|       test123.py
+|
++---vježbe6
+|       AdrijanDrascicZadatakPy4.py
+|       artikli_cijene.csv
+|
+\---vježbe7
