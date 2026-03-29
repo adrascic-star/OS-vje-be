@@ -54,3 +54,36 @@ total 3
 -rw-r--r-- 1 Korisnik 197121 10 Mar 29 18:06 .env
 drwxr-xr-x 1 Korisnik 197121  0 Mar 29 18:06 ./
 drwxr-xr-x 1 Korisnik 197121  0 Mar 29 17:46 ../
+
+Zadatak 4
+
+Korištene naredbe:
+cd data
+rm -iv *
+cd ..
+cp -iv -n backup/* data/
+cp -iv -n backup/.[!.]* data/
+ls -ltA -1 data
+
+Rezultat:
+Sve vidljive datoteke su obrisane uz potvrdu korisnika, dok je skrivena datoteka .env ostala u direktoriju data.
+Datoteke iz direktorija backup kopirane su u data. Postojeća datoteka .env nije prepisana zbog opcije -n.
+
+Naredba:
+ls -ltA -1 data
+
+Rezultat:
+total 3
+-rw-r--r-- 1 Korisnik 197121 29 Mar 29 18:38 script.js
+-rw-r--r-- 1 Korisnik 197121 36 Mar 29 18:38 style.css
+-rw-r--r-- 1 Korisnik 197121 10 Mar 29 17:52 .env
+
+
+Dodatna naredba:
+find data -maxdepth 1
+
+Primjer rezultata:
+data
+data/.env
+data/script.js
+data/style.css
