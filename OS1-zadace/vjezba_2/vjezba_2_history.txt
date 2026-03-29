@@ -1,0 +1,150 @@
+    1  cd dokumenti
+    2  ls
+    3  cd [200~C:\Users\Korisnik\Desktop\adrijan\faks\Operacijski sustavi\OS-vje-be\OS2-zadace
+    4  cd ~C:\Users\Korisnik\Desktop\adrijan\faks\Operacijski sustavi\OS-vje-be\OS2-zadace
+    5  cd C:\Users\Korisnik\Desktop\adrijan\faks\Operacijski sustavi\OS-vje-be\OS2-zadace
+    6  cd 'C:\Users\Korisnik\Desktop\adrijan\faks\Operacijski sustavi\OS-vje-be\OS2-zadace'
+    7  ls
+    8  cd ..
+    9  ls
+   10  cd OS-zadace
+   11  ls
+   12  cd OS2-zadace
+   13  ls
+   14  mkdir zadatak1
+   15  cd zadatak1
+   16  touch vjezba_2.txt
+   17  cd..
+   18  cd ..
+   19  cd ..
+   20  ls
+   21  cd "C:\Users\Korisnik\Desktop\adrijan\faks\Operacijski sustavi\OS-vje-be"
+   22  ls
+   23  cd OS1-zadace
+   24  ls
+   25  mkdir vjezba_2
+   26  cd vjezba_2
+   27  ls
+   28  touch vjezba_2.txt
+   29  nano vjezba_2.txt
+   30  cat vjezba_2.txt
+   31  git rev-parse --show-toplevel
+   32  cd ..
+   33  cd ..
+   34  git add .
+   35  git commit -m "Riješen zadatak 1"
+   36  git push
+   37  cd OS1-zadace/vjezba_2
+   38  mkdir data
+   39  mkdir backup
+   40  cd data
+   41  cd ..
+   42  touch data/script.js
+   43  touch data/style.css
+   44  touch data/.env
+   45  echo 'console.log("Hello, World!")' > data/script.js
+   46  echo 'body { background-color: #f0f0f0; }' > data/style.css
+   47  echo 'VJEZBE=OS' > data/.env
+   48  cat data/script.js
+   49  cat data/style.css
+   50  cat data/.env
+   51  nano vjezba_2.txt
+   52  cd ..
+   53  git add .
+   54  git commit -m "Riješen zadatak 2"
+   55  git push
+   56  cd vjezba_2
+   57  ls
+   58  cp -v data/* backup/
+   59  cp -v data/.[!.]* backup/
+   60  cd data
+   61  ls -laS ../backup
+   62  cd ..
+   63  nano vjezba_2.txt
+   64  nano vjezba_2.txt
+   65  nano vjezba_2.txt
+   66  git add .
+   67  git commit -m "Riješen zadatak 3"
+   68  git push
+   69  cd data
+   70  rm -iv script.js style.css
+   71  cd ..
+   72  cp -iv -n backup/* data/
+   73  cp -iv -n backup/.[!.]* data/
+   74  ls -ltA -1 data
+   75  nano vjezba_2.txt
+   76  find data -maxdepth 1
+   77  git add .
+   78  git commit -m "Riješen zadatak 4"
+   79  git push
+   80  ls -la data
+   81  nano vjezba_2.txt
+   82  git push
+   83  git add .
+   84  git commit -m "Riješen zadatak 4"
+   85  git push
+   86  mkdir test_dir
+   87  cd test_dir
+   88  mkdir folder1 folder2
+   89  touch file1.txt file2.txt
+   90  touch folder1/a.txt folder1/b.txt
+   91  touch folder2/c.txt
+   92  touch .hidden
+   93  touch file3.log file4.md config.json notes.txt
+   94  touch folder1/c.log folder1/d.md
+   95  touch folder2/d.json folder2/e.txt
+   96  mkdir folder2/subfolder
+   97  touch folder2/subfolder/test1.txt
+   98  ls -laS
+   99  ls -lhS
+  100  tree -a
+  101  tree /a /f
+  102  tree.com
+  103  tree.com -a
+  104  tree.com /a /f
+  105  tree.com /a
+  106  tree.com /f
+  107  tree.com
+  108  alias tree='tree.com'
+  109  tree /a /f
+  110  tree /a
+  111  tree -a
+  112  tree //a //f
+  113  cd ..
+  114  nano vjezba_2.txt
+  115  cd test_dir
+  116  ls -lhS
+  117  cd ~/Desktop/adrijan/faks/osnove\ podatkovne\ znanosti
+  118  ls -laS
+  119  ls -lhS
+  120  tree.com //F //A
+  121  nano vjezba_2.txt
+  122  cd ..
+  123  cd ~/Desktop/adrijan/faks/Operacijski sustavi/OS-vje-be/OS1-zadace/vjezba_2
+  124  cd 'Operacijski sustavi"
+  125  cd
+  126  exit
+  127  ls
+  128  "
+  129  ls
+  130  cd desktop
+  131  cd adrijan
+  132  cd faks
+  133  cd 'osnove podatkovne znanosti'
+  134  ls -laS
+  135  cd ..
+  136  cd 'Operacijski sustavi'
+  137  cd OS-vje-be
+  138  cd OS1-zadace
+  139  cd vjezba_2
+  140  nano vjezba_2.txt
+  141  ls
+  142  ls
+  143  ls
+  144  ls
+  145  ls
+  146  ls
+  147  git add .
+  148  git commit -m "Riješen zadatak 5"
+  149  git push
+  150  history > vjezba_2_history.txt
