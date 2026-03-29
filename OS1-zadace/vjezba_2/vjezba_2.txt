@@ -1,0 +1,10 @@
+Zadatak 1
+
+Korištene naredbe:
+cd "/c/Users/Korisnik/Desktop/adrijan/faks/Operacijski sustavi/OS-vje-be/OS1-zadace"
+mkdir vjezba_2
+cd vjezba_2
+touch vjezba_2.txt
+
+Rezultat:
+Kreiran je direktorij vjezba_2 i datoteka vjezba_2.txt.
