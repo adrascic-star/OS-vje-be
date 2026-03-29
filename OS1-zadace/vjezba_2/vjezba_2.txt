@@ -31,3 +31,26 @@ style.css: body { background-color: #f0f0f0; }
 .env: VJEZBE=OS
 
 Sadržaj datoteka provjerava se naredbom cat.
+
+Zadatak 3
+
+Korištene naredbe:
+cp -v data/* backup/
+cp -v data/.[!.]* backup/
+cd data
+ls -laS ../backup
+cd ..
+
+Rezultat:
+Sve datoteke iz direktorija data uspješno su kopirane u direktorij backup, uključujući skrivene datoteke (.env).
+Naredba ls -laS ../backup prikazuje detaljan popis datoteka u direktoriju backup, uključujući skrivene datoteke, 
+sortirane po veličini od najveće prema najmanjoj.
+
+Reultat naredbe "ls -laS ../backup":
+
+total 3
+-rw-r--r-- 1 Korisnik 197121 36 Mar 29 18:05 style.css
+-rw-r--r-- 1 Korisnik 197121 29 Mar 29 18:05 script.js
+-rw-r--r-- 1 Korisnik 197121 10 Mar 29 18:06 .env
+drwxr-xr-x 1 Korisnik 197121  0 Mar 29 18:06 ./
+drwxr-xr-x 1 Korisnik 197121  0 Mar 29 17:46 ../
