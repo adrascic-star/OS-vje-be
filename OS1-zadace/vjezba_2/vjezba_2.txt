@@ -80,10 +80,12 @@ total 3
 
 
 Dodatna naredba:
-find data -maxdepth 1
+ls -la data
 
 Primjer rezultata:
-data
-data/.env
-data/script.js
-data/style.css
+total 3
+drwxr-xr-x 1 Korisnik 197121  0 Mar 29 18:38 ./
+drwxr-xr-x 1 Korisnik 197121  0 Mar 29 17:46 ../
+-rw-r--r-- 1 Korisnik 197121 10 Mar 29 17:52 .env
+-rw-r--r-- 1 Korisnik 197121 29 Mar 29 18:38 script.js
+-rw-r--r-- 1 Korisnik 197121 36 Mar 29 18:38 style.css
