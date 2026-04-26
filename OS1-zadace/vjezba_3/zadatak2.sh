@@ -19,4 +19,3 @@ fi
 for (( i=1; i<=broj; i++)); do
 	echo "$i" >> brojevi.txt
 done
-
